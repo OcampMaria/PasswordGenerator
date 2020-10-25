@@ -1,19 +1,23 @@
 
 
 //Used functions to generate random character types: lowercase, uppercase, numeric, and special characters
-//the *26 means that there is a total of 26 letters in teh alphabet (This would be the limit of how many times I want to randomize).
+
+//the *26 means that there is a total of 26 letters in teh alphabet (This would be the limit of how many times I want to randomize). the +97 is the number where the lowercase letters start in the Browser Character Set. 
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
 
+//Randomized uppercase letters. There are 26 uppercase letters. The uppercase letters start at the 65 number on the Browser Character Set. 
 function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
 }
 
+//Randomized numbers. There are 10 numbers. The numbers start at 48 on the Browser Character Set. 
 function getRandomNumber() {
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
 }
 
+//Randomized special characters. created a variable with string and used it to get random symbols. 
 function getRandomSymbol() {
  var symbols = "!@#$%^&*.";
  return symbols[Math.floor(Math.random() *symbols.length)];
