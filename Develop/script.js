@@ -1,30 +1,28 @@
 
-// GIVEN I need a new, secure password: 
 
-// // WHEN I click the button to generate a password
-// // THEN I am presented with a series of prompts for password criteria
+//Used functions to generate random character types: lowercase, uppercase, numeric, and special characters
+//the *26 means that there is a total of 26 letters in teh alphabet (This would be the limit of how many times I want to randomize).
+function getRandomLower() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+}
 
-// // WHEN prompted for password criteria
-// // THEN I select which criteria to include in the password
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+}
 
-// // WHEN prompted for the length of the password
-// // THEN I choose a length of at least 8 characters and no more than 128 characters
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+}
 
-// // WHEN prompted for character types to include in the password
-// // THEN I choose lowercase, uppercase, numeric, and/or special characters
+function getRandomSymbol() {
+ var symbols = "!@#$%^&*.";
+ return symbols[Math.floor(Math.random() *symbols.length)];
+}
 
-// // WHEN I answer each prompt
-// // THEN my input should be validated and at least one character type should be selected
-
-// // WHEN all prompts are answered
-// // THEN a password is generated that matches the selected criteria
- 
-// // WHEN the password is generated
-// // THEN the password is either displayed in an alert or written to the page
+console.log(getRandomSymbol());
 
 
-// set variables for character types: lowercase, uppercase, numeric, and/or special characters
-  var specialChar = "!@#$%^&*".split("");
+var specialChar = "!@#$%^&*".split("");
   var numeric = "1234567890".split("")
   var loweCase = "abcdefghijklmnopqrstuvwxyz".split("");
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -34,6 +32,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
+//generator functions******
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -44,3 +43,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// // WHEN I click the button to generate a password
+// // THEN I am presented with a series of prompts for password criteria
