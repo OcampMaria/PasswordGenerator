@@ -43,10 +43,10 @@ function generatePassword(lower, upper, number, symbol, length) {
   //minimum count for character types
   var minimumCount = 0;
 
-  var minimumNumber = "";
-  var minimumLower = "";
-  var minimumUpper = "";
-  var minimumSymbol = "";
+  var minNumber = "";
+  var minLower = "";
+  var minUpper = "";
+  var minSymbol = "";
 
 
 
@@ -76,7 +76,7 @@ var functionArray = [
 // maked sure that sure whether user selected for all and uses empty minimums from above
 
 if (number === true) {
-  minimumNumbers = functionArray[0];
+  minNumber = functionArray[0];
   minimumCount++;
 
 }
@@ -111,10 +111,10 @@ for (let i = 0; i < (parseInt(length) - minimumCount); i++) {
 }
 
 // look for the minumum chracters added. 
-randomPasswordGenerated += minimumNumber;
-randomPasswordGenerated += minimumLower;
-randomPasswordGenerated += minimumUpper ;
-randomPasswordGenerated += minimumSymbol;
+randomPasswordGenerated += minNumber;
+randomPasswordGenerated += minLower;
+randomPasswordGenerated += minUpper ;
+randomPasswordGenerated += minSymbol;
 
 
 return randomPasswordGenerated;
