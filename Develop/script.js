@@ -25,13 +25,13 @@ generateBtn.addEventListener("click", writePassword); {
   prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
 } 
 //asked whether they want lowecase letters in their password. 
-var lower = confirm("Would you like to add lowercase letters to your password?");
+var selectlower = confirm("Would you like to add lowercase letters to your password?");
 //asked whether they want uppercase letters in their password. 
-var upper = confirm("would you like to add uppercase letters to your password?");
+var selectupper = confirm("would you like to add uppercase letters to your password?");
 //asked whether they want numbers in their password. 
-var number = confirm("Would you like to add numbers to your password?");
+var selectnumber = confirm("Would you like to add numbers to your password?");
 //asked whether they want symbols on in their password. 
-var symbol = confirm("would you like to add symbols to your password?")
+var selectsymbol = confirm("would you like to add symbols to your password?")
 }
 
 console.log(length);
