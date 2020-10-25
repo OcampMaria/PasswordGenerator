@@ -7,7 +7,7 @@ var generateBtn = document.querySelector("#generate");
 // Generate password Function. 
 
 function writePassword() {
-  var password = generatePassword ();
+  var password = generatePassword();
   var passwordText = document.querySelector("#password");
   
   passwordText.value = password;
@@ -20,8 +20,10 @@ function writePassword() {
 // Generate event listener. Added variables to define different criterias for password.
 generateBtn.addEventListener("click", writePassword); 
 
-function generatePassword() {
+function generatePassword(lower, upper, number, symbol, length) {
  
+
+
   //defined length criteria. Prompted person to choose length of password and set criteria of no less than 8 and no more than 128 characters. 
   var length =parseInt(
   prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
@@ -39,7 +41,12 @@ function generatePassword() {
   //asked whether they want symbols on in their password. 
   var symbol = confirm("would you like to add symbols to your password?")
   //minimum count for character types
-  var minCount = 0;
+  var minimumCount = 0;
+
+  var minimumNumber = "";
+  var minimumLower = "";
+  var minimumUpper = "";
+  var minimumSymbol = "";
 
 
 
@@ -61,11 +68,56 @@ var functionArray = [
   },
   //Randomized special characters. created a variable with string and used it to get random symbols. 
   function getRandomSymbol() {
-   var symbols = "!@#$%^&*.";
-   return symbols[Math.floor(Math.random() *symbols.length)];
+   var symbol = "!@#$%^&*.";
+   return symbol[Math.floor(Math.random() * symbol.length)];
   }
 ];
 
+// maked sure that sure whether user selected for all and uses empty minimums from above
+
+if (number === true) {
+  minimumNumbers = functionArray[0];
+  minimumCount++;
+
+}
+
+if (lower === true) {
+  minimumLowerCases = functionArray[1];
+  minimumCount++;
+
+}
+
+if (upper === true) {
+  minimumUpperCases = functionArray[2];
+  minimumCount++;
+
+}
+
+if (symbol === true) {
+  minSymbol = functionArray[3];
+  minimumCount++;
+
+}
+
+// empty string variable for the for loop below
+var randomPasswordGenerated = "";
+
+// loop getting random characters
+for (let i = 0; i < (parseInt(length) - minimumCount); i++) {
+  var randomNumberPicked = Math.floor(Math.random() * 4);
+
+  randomPasswordGenerated += functionArray[randomNumberPicked]();
+
+}
+
+// look for the minumum chracters added. 
+randomPasswordGenerated += minimumNumber;
+randomPasswordGenerated += minimumLower;
+randomPasswordGenerated += minimumUpper ;
+randomPasswordGenerated += minimumSymbol;
+
+
+return randomPasswordGenerated;
 
 }
 
