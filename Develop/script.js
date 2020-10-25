@@ -4,16 +4,19 @@
 var generateBtn = document.querySelector("#generate");
 
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// Generate password Function. 
 
+function writePassword() {
+  var password = generatePassword ();
+  var passwordText = document.querySelector("#password");
+  console.log(writePassword, "yo");
+ 
+  
   passwordText.value = password;
 
-}
+};
 
-// Add event listener to generateBtn. Added variables to define different criterias for password.
+// Generate event listener. Added variables to define different criterias for password.
 generateBtn.addEventListener("click", writePassword); {
 
   //defined length criteria. Prompted person to choose length of password and set criteria of no less than 8 and no more than 128 characters. 
@@ -25,20 +28,14 @@ generateBtn.addEventListener("click", writePassword); {
   prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
 } 
 //asked whether they want lowecase letters in their password. 
-var selectlower = confirm("Would you like to add lowercase letters to your password?");
+var lower = confirm("Would you like to add lowercase letters to your password?");
 //asked whether they want uppercase letters in their password. 
-var selectupper = confirm("would you like to add uppercase letters to your password?");
+var upper = confirm("would you like to add uppercase letters to your password?");
 //asked whether they want numbers in their password. 
-var selectnumber = confirm("Would you like to add numbers to your password?");
+var number = confirm("Would you like to add numbers to your password?");
 //asked whether they want symbols on in their password. 
-var selectsymbol = confirm("would you like to add symbols to your password?")
+var symbol = confirm("would you like to add symbols to your password?")
 }
-
-console.log(length);
-console.log(lower);
-console.log(upper);
-console.log(symbol);
-console.log(number);
 
 
 
