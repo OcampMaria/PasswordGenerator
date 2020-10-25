@@ -9,16 +9,18 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword ();
   var passwordText = document.querySelector("#password");
-  console.log(writePassword, "yo");
- 
   
   passwordText.value = password;
 
 };
 
-// Generate event listener. Added variables to define different criterias for password.
-generateBtn.addEventListener("click", writePassword); {
 
+
+
+// Generate event listener. Added variables to define different criterias for password.
+generateBtn.addEventListener("click", writePassword); 
+function generatePassword() {
+ 
   //defined length criteria. Prompted person to choose length of password and set criteria of no less than 8 and no more than 128 characters. 
   var length =parseInt(
   prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
@@ -35,9 +37,11 @@ var upper = confirm("would you like to add uppercase letters to your password?")
 var number = confirm("Would you like to add numbers to your password?");
 //asked whether they want symbols on in their password. 
 var symbol = confirm("would you like to add symbols to your password?")
+//minimum count for character types
+var minCount = 0;
+
+
 }
-
-
 
 
 //added the random functions into a variable. 
