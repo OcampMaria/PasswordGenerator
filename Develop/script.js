@@ -1,4 +1,47 @@
 
+//Generate Password click event. 
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generateBtn. Added variables to define different criterias for password.
+generateBtn.addEventListener("click", writePassword); {
+
+  //defined length criteria. Prompted person to choose length of password and set criteria of no less than 8 and no more than 128 characters. 
+  var length =parseInt(
+  prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
+  while(length < 8 || length > 128 || typeof(length) != "number" || length === NaN || length === null) {
+  alert("Please choose a number that is more than 8 and less than 128 characters");
+  length=parseInt(
+  prompt("How many characters do you want the password to be? The password cannot be less than 8 or more than 128 characters."));
+} 
+//asked whether they want lowecase letters in their password. 
+var lower = confirm("Would you like to add lowercase letters to your password?");
+//asked whether they want uppercase letters in their password. 
+var upper = confirm("would you like to add uppercase letters to your password?");
+//asked whether they want numbers in their password. 
+var number = confirm("Would you like to add numbers to your password?");
+//asked whether they want symbols on in their password. 
+var symbol = confirm("would you like to add symbols to your password?")
+}
+
+console.log(length);
+console.log(lower);
+console.log(upper);
+console.log(symbol);
+console.log(number);
+
+
+
 
 //added the random functions into a variable. 
 var randomFunctions = {
@@ -9,8 +52,7 @@ var randomFunctions = {
 };
 
 //Used functions to generate random character types: lowercase, uppercase, numeric, and special characters
-
-//the *26 means that there is a total of 26 letters in teh alphabet (This would be the limit of how many times I want to randomize). the +97 is the number where the lowercase letters start in the Browser Character Set. 
+//the *26 means that there is a total of 26 letters in teh alphabet (This would be the limit of how many times I want to randomize). 97 is the number where the lowercase letters start in the Browser Character Set. 
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
@@ -31,30 +73,8 @@ function getRandomSymbol() {
  return symbols[Math.floor(Math.random() *symbols.length)];
 }
 
-//console.log(getRandomSymbol());
 
 
-var specialChar = "!@#$%^&*".split("");
-  var numeric = "1234567890".split("")
-  var loweCase = "abcdefghijklmnopqrstuvwxyz".split("");
-  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-  
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-//generator functions******
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-// // WHEN I click the button to generate a password
-// // THEN I am presented with a series of prompts for password criteria
