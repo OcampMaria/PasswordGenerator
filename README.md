@@ -23,7 +23,10 @@ Moreover, I learned that with a little of persistance, I am able to get through 
 </p>
 
 This is a preview of how the Web application Looks Like: 
+
+
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
+
 
 ## Usage
 <p>
@@ -43,10 +46,8 @@ As explained by [choosealicense.com](https://choosealicense.com/no-permission/),
 
 >[This repository] is under exclusive copyright by default. [You cannot] use, copy, distribute, or modify without being at risk of take-downs, shake-downs, or litigation.
 
----
-
-© 2019 Trilogy Education Services, LLC, a 2U, Inc. brand.  Confidential and Proprietary.  All Rights Reserved.
-
+- - -
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
 ## Badges
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
