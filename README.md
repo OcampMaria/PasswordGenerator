@@ -17,7 +17,7 @@ Moreover, I learned that with a little of persistance, I am able to get through 
 </p>
 
 ## Installation
-<p> The application code can be found in [Github](https://github.com/OcampMaria/PasswordGenerator) and the link to the published application can be accessed on the following link: (file:///C:/Users/Maria%20Ocampo/Desktop/PasswordGenerator/index.html). 
+<p> The application code can be found in [Github](https://github.com/OcampMaria/PasswordGenerator) and the link to the published application can be accessed on the following link: [](file:///C:/Users/Maria%20Ocampo/Desktop/PasswordGenerator/index.html). 
 </p>
 
 This is a preview of how the Web application Looks Like: 
