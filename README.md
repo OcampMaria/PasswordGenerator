@@ -1,6 +1,4 @@
 # Personalized Password Generator
-
-## Your Task
 <p> 
 The Password Generanator application's code was already created and styled, but the application was not totally functioning. JavaScript code was used to generate a random strong password with specific criteria chosen by the user to provide greater security. Criteria for the password can include letters, numbers, and special characters. 
 </p>
