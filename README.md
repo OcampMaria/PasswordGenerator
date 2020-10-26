@@ -1,93 +1,52 @@
-# 03 JavaScript: Password Generator
+# Personalized Password Generator
 
 ## Your Task
+<p> 
+The Password Generanator application's code was already created and styled, but the application was not totally functioning. JavaScript code was used to generate a random strong password with specific criteria chosen by the user to provide greater security. Criteria for the password can include letters, numbers, and special characters. 
+</p>
 
-This week’s homework requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+<p>
+Visual Studio Code was used to add JavaScript code to finish the application. HTML and CSS files were used for the entire application to function. Once the code was completed the application was published using Github Pages. 
+</p>
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+<p>
+When completing this application, some of the challenges that appeared included, having minimmum understanding of JavaScript. I found functions, and objects to be the most challenging. I neded to spend extra time figuring out how the functions work and where to place the correct code. After I had a better understanding of how JavaScript works I was able to finish the application. 
+</p>
 
-## User Story
+<p>
+By working on this application, I learned basic JavaScript fucntions. As always there can be different ways to approach the code. I wrote code that I was able to better understand. 
+Moreover, I learned that with a little of persistance, I am able to get through the challenges and obstacles. 
+</p>
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Installation
+<p> The application code can be found in [Github](https://github.com/OcampMaria/PasswordGenerator) and the link to the published application can be accessed on the following link: (file:///C:/Users/Maria%20Ocampo/Desktop/PasswordGenerator/index.html). 
+</p>
 
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
+This is a preview of how the Web application Looks Like: 
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
 
-## Grading Requirements
+## Usage
+<p>
+The application can be accessed through the GitHub pages link or the direct web link.
+Once on the web application, the user can click on the "Generate Password". When clicking on the button, the user will be prompted to select the criteria they would like their password to contain. After this, the screen will generate and return a random password. 
+</p>
 
-This homework is graded based on the following criteria: 
+## Credits
+[w3schools](https://www.w3schools.com/html/)
+[Full Stack Program](https://uclax.bootcampcontent.com/UCLA-Coding-Boot-Camp/ucla-la-fsf-pt-09-2020-u-c/tree/master)
 
-### Technical Acceptance Criteria: 40%
+## No License
 
-* Satisfies all of the above acceptance criteria plus the following:
+This file is for informational purposes only and follows the common naming convention of `LICENSE.md` to make it easy to find. No license is implied.
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+As explained by [choosealicense.com](https://choosealicense.com/no-permission/), when no license is declared: 
 
-### Deployment: 32%
+>[This repository] is under exclusive copyright by default. [You cannot] use, copy, distribute, or modify without being at risk of take-downs, shake-downs, or litigation.
 
-* Application deployed at live URL.
+---
 
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+© 2019 Trilogy Education Services, LLC, a 2U, Inc. brand.  Confidential and Proprietary.  All Rights Reserved.
 
 
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Badges
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
