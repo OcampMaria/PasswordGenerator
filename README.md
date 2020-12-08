@@ -25,6 +25,8 @@ This is a preview of how the Web application Looks Like:
 
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
 
+![password generator demo](./Assets/PasswordGeneratorpic.jpg)
+
 
 ## Usage
 <p>
