@@ -34,20 +34,10 @@ The application can be accessed through the GitHub pages link or the direct web 
 Once on the web application, the user can click on the "Generate Password". When clicking on the button, the user will be prompted to select the criteria they would like their password to contain. After this, the screen will generate and return a random password. 
 </p>
 
-## Credits
-[w3schools](https://www.w3schools.com/html/)
-[Full Stack Program](https://uclax.bootcampcontent.com/UCLA-Coding-Boot-Camp/ucla-la-fsf-pt-09-2020-u-c/tree/master)
-
-## No License
-
-This file is for informational purposes only and follows the common naming convention of `LICENSE.md` to make it easy to find. No license is implied.
-
-As explained by [choosealicense.com](https://choosealicense.com/no-permission/), when no license is declared: 
+## License
+Distributed under the MIT License.
 
 >[This repository] is under exclusive copyright by default. [You cannot] use, copy, distribute, or modify without being at risk of take-downs, shake-downs, or litigation.
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
-## Badges
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+Copyright &copy; 2020 Maria Ocampo. All Rights Reserved.
